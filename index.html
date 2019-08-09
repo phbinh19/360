@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>360 Panorama web</title>
+	<link rel="stylesheet" href="">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+	
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/OrbitControls.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/DeviceOrientationControls.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/StereoEffect.js"></script>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+<style type="text/css" media="screen">
+	body {
+		margin: 0;
+		overflow: hidden;
+	}
+
+	#stereo-toggle {
+		background-color: rgba(0, 0, 0, 0.8);
+		border: 1px solid #fff;
+		border-radius: 8px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 20px;
+		left: 20px;
+		padding: 10px 20px;
+		position: fixed;
+		top: 20px;
+		z-index: 1000;
+		transition: all 400ms linear;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 1);
+			border-color: #afa;
+			color: #afa;
+		}
+	}
+</style>
+<body>
+
+	<a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#home">Ký túc xá SICT</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#cong">Cổng KTX</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#khua">Khu A</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#khub">Khu B</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#phongo">Phòng ở</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#phongvesinh">Phòng vệ sinh</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#diachi">Địa chỉ</a>
+      </li>
+    </ul>
+  </nav>
+
+	<div id="stereo-toggle">Turn VR On</div>
+	
+	<script src="./myjs.js" type="text/javascript"></script>
+
+	<!-- Scroll to Top Button-->
+	<a class="scroll-to-top rounded js-scroll-trigger" href="#home">
+	<i class="fas fa-angle-up"></i>
+	</a>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for this template -->
+	<script src="js/stylish-portfolio.min.js"></script>
+</body>
+</html>
